@@ -59,7 +59,7 @@ jobs:
         run: |
           export DISPLAY=:99
           # استخدام xvfb-run مع تحديد أبعاد شاشة واضحة لضمان عدم انهيار المتصفح
-          timeout 350m xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24 -ac +extension GLX +render -noreset" python -u bot_master1.py || echo "⚠️ انتهت الجلسة، جاري التجهيز للجولة التالية..."
+          timeout 350m xvfb-run --auto-servernum --server-args="-screen 0 1920x1080x24 -ac +extension GLX +render -noreset" python -u botpro16.py || echo "⚠️ انتهت الجلسة، جاري التجهيز للجولة التالية..."
 
       - name: Self-Restart Workflow
         if: always()
